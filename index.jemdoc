@@ -1,0 +1,21 @@
+# jemdoc: menu{menu}{index.html}
+= Zhen Peng (彭真)
+
+~~~
+{}{img_left}{figure/bio.jpeg}{alt text}{120}{160}
+
+Zhen Peng is a post-doctoral fellow at the Academy of Mathematics and Systems Science, Chinese Academy of Sciences, advised by Professor [https://www.gaobin.cc/ Bin Gao].
+He received the Bachelor degree (2017) in information and computing science at Northwest A&F University and the PhD (2023) in applied mathematics at the Beihang University.
+His research interests include low-rank matrix and tensor optimization, manifold optimization, convex and nonconvex optimization as well as their applications.
+
+E-mail: pengzhen \[@\] lsec.cc.ac.cn
+
+Office: SiYuan Building - 509, No.55, ZhongGuanCun East Road, Beijing 100190, China
+~~~
+
+== Publications
+
+- H. Li, *Z. Peng*, C. Pan, and D. Zhao. Fast gradient method for low-rank matrix estimation. /J. Sci. Comput./, 96(2):41, Jun 2023. 
+([https://arxiv.org/pdf/2211.16236.pdf Arxiv], [https://github.com/pxxyyz/FastGradient Code])
+
+- *Z. Peng*, H. Li, C. Pan, and D. Zhao. Local Linear Convergence Rate of Scaled Gradient Descent for Low-rank Matrix Estimation. /Submitted/. ([https://github.com/pxxyyz/FastGradient Code])
