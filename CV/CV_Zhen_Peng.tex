@@ -1,0 +1,223 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks = true,linkcolor = blue,urlcolor  = blue,citecolor = blue,anchorcolor = blue]{hyperref}
+\usepackage[usenames]{color}
+ \urlstyle{same}
+\usepackage{enumitem}
+
+\usepackage{geometry}
+\geometry{a4paper,left=1.2in,right=1.2in,top=1in,bottom=1in}
+
+\usepackage{palatino}
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1em}
+
+%\leftmargin=0.25in
+%\oddsidemargin=0.25in
+%\textwidth=6.0in
+%\topmargin=0.25in
+%\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[5]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\\ \smallskip
+			{#5}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.3in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{\bf{Zhen Peng}
+\vspace{6pt}}{\emph{Address: } SiYuan Building - 509, No.55, ZhongGuanCun East Road, Beijing 100190, China}{\emph{Homepage:} \url{https://p-opt.github.io/}}{\emph{Email:} pengzhen@lsec.cc.ac.cn}
+
+\header{\LARGE{Employment}}
+\begin{body}
+	\vspace{18pt}
+	\textbf{Postdoc}
+	\hfill \emph{Nov.~2023 - present} \\
+	\begin{itemize}
+		\item[-] Academy of Mathematics and Systems Science, Chinese Academy of Sciences
+		\item[-] Advisor: Prof.~\emph{Bin Gao}
+	\end{itemize}
+\end{body}
+
+\bigskip
+\header{\LARGE{Education}}
+\begin{body}
+	\vspace{18pt}
+
+	\textbf{Ph.D.} in \textbf{Operations Research and Financial Engineering} \hfill \emph{Nov. 2023}
+    \begin{itemize}
+      \item[-] Beihang University, advised by Professor \emph{Hongyi Li} and Professor \emph{Di Zhao}
+      %\item GPA: 3.976 / 4.0
+    \end{itemize}
+    \textbf{B.E.} in \textbf{Information \& Computing Science } \hfill \emph{July 2017} \\
+    \begin{itemize}
+      \item[-] Northwest A\&F University
+    \end{itemize}
+\end{body}
+
+\bigskip
+\header{\LARGE{Research Interests}}
+\begin{body}
+\vspace{18pt}
+Optimization on low-rank manifolds and their applications
+\end{body}
+
+\bigskip
+\header{\LARGE{Preprints}}
+\begin{body}
+	\vspace{18pt}
+	\begin{enumerate}[label={[{P}{{\arabic*}}]}]
+
+\item \textbf{Z.~Peng}, H.~Li, C.~Pan, D.~Zhao, {``Local Linear Convergence Rate of Scaled Gradient Descent for Low-rank Matrix Estimation,''} 2023.\\
+
+	\end{enumerate}
+\end{body}
+
+
+\bigskip
+\header{\LARGE{Journal articles}}
+\begin{body}
+\vspace{18pt}
+\begin{enumerate}[label={[{J}{{\arabic*}}]}]
+
+\item H.~Li, \textbf{Z.~Peng}, C.~Pan, D.~Zhao, {``Fast gradient method for low-rank matrix estimation,''} \emph{Journal of Scientific Computing}, vol.~96, no.~2, pp.~41, 2023.\\
+
+\item \textbf{Z.~Peng}, H.~Li, , D.~Zhao, C.~Pan, {``Reducing the Dimensionality of SPD Matrices with Neural Networks in BCI,''} \emph{Mathematics}, vol.~11, no.~7, pp.~1570, 2023.\\
+
+% \item \textbf{Z.~Peng} (\textbf{alphabetical order}), {``1,''} accepted to \emph{2}, vol.~51, no.~2, pp.~738-761, 2023.\\
+ 	
+\end{enumerate}
+\end{body}
+
+\bigskip
+\header{\LARGE{Conference papers}}
+\begin{body}
+	\vspace{18pt}
+	\begin{enumerate}[label={[{C}{{\arabic*}}]}]
+	\item
+	% \item X.~Xu, Y.~Shen, Y.~Chi, \textbf{C.~Ma}, ``The Power of Preconditioning in Overparameterized Low-Rank Matrix Sensing,'' \emph{International Conference on Machine Learning (ICML)}, 2023.
+	\end{enumerate}
+\end{body}
+
+
+% \bigskip
+% \header{\LARGE{Tutorials}}
+% \begin{body}
+% \vspace{18pt}
+% \begin{enumerate}[label={[{Tut}{{\arabic*}}]}]
+% \item  {``Nonconvex Optimization for High-Dimensional Signal Estimation: Spectral and Iterative Methods,''} European Signal Processing Conference (EUSIPCO) 2020, together with Y.~Chen and Y.~Chi.
+% \end{enumerate}
+% \end{body}
+
+\bigskip
+\header{\LARGE{Invited talks}}
+\begin{body}
+	\vspace{18pt}
+	\begin{enumerate}[label={[{T}{{\arabic*}}]}]
+	\item
+	% \item Allerton Conference on Communication, Control, and Computing, Sept.~2023.
+	\end{enumerate}
+\end{body}
+
+\bigskip
+\header{\LARGE{Professional Service}}
+\begin{body}
+	\vspace{18pt}
+	\begin{enumerate}
+	% \item
+	% \item Co-organizer of \emph{Statistics Colloquium}, Department of Statistics, University of Chicago \hfill Sept. 2022 -- present
+	% \item Co-organizer of \emph{$6^{\mathsf{th}}$ Princeton Day of Statistics}, ORFE, Princeton University
+	% \item Member of Technical Program Committee for \emph{52nd Annual Conference on Information Sciences and Systems} (\emph{CISS 2018})
+	\item Reviewer for the following journals: \emph{}
+	\item Reviewer for the following conferences: \emph{}
+	\end{enumerate}
+\end{body}
+
+%
+\bigskip
+\header{\LARGE{Teaching}}
+\begin{body}
+	\vspace{18pt}
+	\begin{enumerate}
+	\item \emph{Matrix Theory} by Professor D.~Zhao, Fall 2020 $\sim$ Spring 2022, Teaching Assistant
+	\item \emph{Linear Algebra} by Professor H.~Li, Fall 2017 $\sim$ Spring 2021, Teaching Assistant
+	\end{enumerate}
+\end{body}
+
+%\bigskip
+%\header{\LARGE{Internship Experience}}
+%\begin{body}
+%\vspace{18pt}
+%\emph{AI Labs, Hudson River Trading, New York, NY} \hfill \emph{June~2019 - Aug.~2019} \\
+%\end{body}
+
+\bigskip
+\header{\LARGE{Awards and Honors}}
+\begin{body}
+    \vspace{18pt}
+    \begin{enumerate}
+	\item {Outstanding Graduate}, Beihang University \hfill{} \emph{2023}
+	\item {Outstanding Dissertation Award}, Beihang University \hfill{} \emph{2023}
+    \end{enumerate}
+\end{body}
+
+\end{document}
